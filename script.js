@@ -19,8 +19,7 @@ function abrirCarta(){
   }else{
     error.textContent='Contraseña incorrecta';
   }
-}
-function crearPetalos(){
+}function crearPetalos(){
   setInterval(()=>{
     let petalo=document.createElement("div");
     petalo.className="petalo";
