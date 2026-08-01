@@ -77,4 +77,37 @@ button:hover{
   100%{
     transform:translateY(0);
   }
+}/* Carta estilo antigua */
+#carta{
+  background:#f7e7c6;
+  border:2px solid #c8a66a;
+  box-shadow:0 0 30px rgba(90,50,20,.35);
+  position:relative;
+  overflow:hidden;
+  font-family:"Georgia",serif;
+}
+
+#carta p{
+  color:#4b2e1d;
+  font-size:18px;
+}
+
+/* Pétalos cayendo */
+.petalo{
+  position:fixed;
+  top:-10px;
+  font-size:25px;
+  animation:caer 8s linear infinite;
+  z-index:5;
+}
+
+@keyframes caer{
+  0%{
+    transform:translateY(-10vh) rotate(0deg);
+    opacity:1;
+  }
+  100%{
+    transform:translateY(110vh) rotate(360deg);
+    opacity:.3;
+  }
 }
