@@ -20,3 +20,18 @@ function abrirCarta(){
     error.textContent='Contraseña incorrecta';
   }
 }
+function crearPetalos(){
+  setInterval(()=>{
+    let petalo=document.createElement("div");
+    petalo.className="petalo";
+    petalo.innerHTML="🌹";
+    petalo.style.left=Math.random()*100+"vw";
+    petalo.style.animationDuration=(5+Math.random()*5)+"s";
+    document.body.appendChild(petalo);
+
+    setTimeout(()=>{
+      petalo.remove();
+    },9000);
+
+  },500);
+}
