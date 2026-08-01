@@ -1,0 +1,1 @@
+Reemplaza foto.jpg por tu foto y pega la carta completa en index.html.

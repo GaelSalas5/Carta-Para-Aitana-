@@ -1,0 +1,1 @@
+function abrirCarta(){if(document.getElementById('password').value==='24Noviembre'){login.style.display='none';carta.style.display='block';}else{error.textContent='Contraseña incorrecta';}}
